@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eid Mubarak</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Happy Eid Mubarak 🌜</h1>
+        <nav>
+            <a href="#greeting">Greeting</a>
+            <a href="#about">About Eid</a>
+            <a href="#traditions">Traditions</a>
+            <a href="#foods">Foods</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Greeting Form -->
+        <section id="greeting">
+            <h2>Get Your Eid Greeting 🎉</h2>
+            <form>
+                <label for="name">Enter your name to receive a personalized Eid greeting:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name">
+                <button type="submit">Get Greeting</button>
+            </form>
+            <p id="greeting-message"></p>
+        </section>
+
+        <!-- About Eid -->
+        <section id="about">
+            <h2>What is Eid? 🌙</h2>
+            <p>
+                Eid is one of the most important celebrations in Islam.
+                Muslims around the world celebrate it with prayer, food, and family.
+            </p>
+            <p>
+                There are two Eids. Eid al-Fitr is celebrated after Ramadan ends,
+                and Eid al-Adha is the Festival of Sacrifice.
+            </p>
+        </section>
+
+        <!-- Traditions -->
+        <section id="traditions">
+            <h2>Eid Traditions ✨</h2>
+            <ol>
+                <li>Wake up early and pray Eid prayer</li>
+                <li>Wear new clothes</li>
+                <li>Visit family and friends</li>
+                <li>Give gifts and Eidi to children</li>
+                <li>Pay Zakat</li>
+            </ol>
+        </section>
+
+        <!-- Foods -->
+        <section id="foods">
+            <h2>Eid Foods 🍽️</h2>
+            <p>Every family has their favourite Eid dishes. Here are some popular ones:</p>
+            <ul>
+                <li>Kahk</li>
+                <li>Ma3rafsh</li>
+                <li>Kahk besokar</li>
+                <li>Ma3rafsh</li>
+                <li>Ma3rafsh</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Made by AhMED Alaa — Css</p>
+    </footer>
+
+    <script>
+        const form = document.querySelector("form");
+        const message = document.getElementById("greeting-message");
+
+        form.addEventListener("submit", function(e) {
+            e.preventDefault();
+            const name = document.getElementById("name").value;
+            if (name.trim() !== "") {
+                message.textContent = "🌙 Eid Mubarak, " + name + "! Wishing you happiness and blessings! 🎉";
+            } else {
+                message.textContent = "Please enter your name first!";
+            }
+        });
+    </script>
+
+</body>
+</html>
