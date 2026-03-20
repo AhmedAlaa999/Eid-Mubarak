@@ -27,7 +27,6 @@ body {
   margin: 0;
 }
 
-/* ---- General Text ---- */
 p {
   color: #cccccc;
   font-family: Arial, sans-serif;
@@ -45,7 +44,6 @@ h2 {
   letter-spacing: 1px;
 }
 
-/* ---- Nav Bar ---- */
 nav {
   background-color: #16213e;
   padding: 12px 40px;
@@ -73,7 +71,6 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* ---- Sections ---- */
 section {
   background-color: rgba(255, 255, 255, 0.05);
   margin: 30px auto;
@@ -82,7 +79,6 @@ section {
   max-width: 700px;
 }
 
-/* ---- Lists ---- */
 ul, ol {
   color: #cccccc;
   font-family: Arial, sans-serif;
@@ -91,7 +87,6 @@ ul, ol {
   padding-left: 20px;
 }
 
-/* ---- Links ---- */
 a {
   color: #e7d000;
   text-decoration: underline;
@@ -101,7 +96,6 @@ a:hover {
   color: white;
 }
 
-/* ---- Form ---- */
 form {
   display: flex;
   flex-direction: column;
@@ -143,7 +137,6 @@ button:hover {
   background-color: white;
 }
 
-/* ---- Greeting Message ---- */
 #greeting-message {
   margin-top: 15px;
   color: #e7d000;
@@ -155,7 +148,6 @@ button:hover {
   line-height: 2;
 }
 
-/* ---- Header subtitle ---- */
 #header-sub {
   color: #cccccc;
   font-family: Arial, sans-serif;
@@ -164,7 +156,6 @@ button:hover {
   word-spacing: 3px;
 }
 
-/* ---- Footer ---- */
 footer {
   text-align: center;
   padding: 20px;
