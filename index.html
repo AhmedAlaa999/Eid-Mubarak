@@ -74,21 +74,5 @@
     <footer>
         <p>Made by AhMED Alaa — Css</p>
     </footer>
-
-    <script>
-        const form = document.querySelector("form");
-        const message = document.getElementById("greeting-message");
-
-        form.addEventListener("submit", function(e) {
-            e.preventDefault();
-            const name = document.getElementById("name").value;
-            if (name.trim() !== "") {
-                message.textContent = "🌙 Eid Mubarak, " + name + "! Wishing you happiness and blessings! 🎉";
-            } else {
-                message.textContent = "Please enter your name first!";
-            }
-        });
-    </script>
-
 </body>
 </html>
